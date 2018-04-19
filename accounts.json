@@ -1,0 +1,94 @@
+{
+	"chili": {
+		"username": "chili-samsung-it@yopmail.com",
+		"password": "12345678"
+	},
+	"hulu": {
+		"username": "devicevip+samsung2@hulu.com",
+		"password": "samsung"
+	},
+	"youtube": {
+		"email": "playmovies.samsung.test7@gmail.com",
+		"password": "SamsungGPM"
+	},
+	"pooq": {
+		"username": "sstest2",
+		"password": "pooq!1412"
+	},
+	"pandora": {
+		"username": "testaccpand001@gmail.com",
+		"password": "adadad"
+	},
+	"hbonow": {
+		"username": "tizen_temp6@hbotest.com",
+		"password": "Samsungpassword111"
+	},
+	"hbogo": {
+		"username": "samsung2@samsung.com",
+		"password": "Password1"
+	},
+	"googleplaymoviestv": {
+		"username": "playmovies.samsung.test7@gmail.com",
+		"password": "SamsungGPM"
+	},
+	"vimeo": {
+		"username": "whtrue+test@gmail.com",
+		"password": "qwerty12"
+	},
+	"videoland": {
+		"username": "samsung3@24imedia.com",
+		"password": "samsungvl3"
+	},
+	"vudu": {
+		"username": "KMKM.PARK@SAMSUNG.COM",
+		"password": "Vudu1234"
+	},
+	"nbcsportslive": {
+		"username": "research38",
+		"password": "support38"
+	},
+	"sling": {
+		"username": "Samsung1@sling.com",
+		"password": "Watchm3",
+		"username2": "Samsung2@sling.com",
+		"password2": "Watchm3",
+		"username3": "Samsung3@sling.com",
+		"password3": "Watchm3",
+		"username4": "Samsung4@sling.com",
+		"password4": "Watchm3",
+		"username5": "Samsung5@sling.com",
+		"password5": "Watchm3"
+	},
+	"sonyliv": {
+		"username": "test.2@mailinator.com",
+		"password": "Test@123"
+	},
+	"maxdome": {
+		"username": "103developer@qs.maxdome.de",
+		"password": "20QAsamsung15"
+	},
+	"toggleSg": {
+		"username": "Ottuser09@mediacorp.com.sg",
+		"password": "123456"
+	},
+	"DigiturkPlay": {
+		"username": "test.3tummuz@outlook.com",
+		"password": "digiturk123"
+	},
+	"iHeartRadio": {
+		"username": "samsungtv@ihearttest.com",
+		"password": "password"
+	},
+	"SHAHID": {
+		"username": "jjjkkk3@mmm.com",
+		"password": "123456"
+	},
+	"OkkoHD": {
+		"username": "samsung-qa2@okko.tv",
+		"password": "1234567890"
+	},
+	"BBCiPlayer": {
+		"username": "youxia17.wu@samsung.com",
+		"password": "wuyouxia1"
+	}
+}
