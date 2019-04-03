@@ -25,7 +25,8 @@ function sdb(){
 		}else {
 			sdb_command = "sdb_2.3";
 		}
-		sdb_command_path = path.resolve("external/" + sdb_command + ".exe");
+		//sdb_command_path = path.resolve("external/" + sdb_command + ".exe");
+		sdb_command_path = path.resolve('./sdb/linux/sdb')
 		console.log("sdb_command_path: " + sdb_command_path);
 		return sdb_command_path;
 	};
