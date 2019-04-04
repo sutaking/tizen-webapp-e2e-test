@@ -97,14 +97,14 @@ function tizen(){
 		var with_index = result.toString().search("with");		
 		if (pid_index!= -1 && with_index!=-1){
     		pid = result.toString().substring(pid_index+6,with_index-1);
-			console.log("pid:"+pid);
+			console.log("****************pid:"+pid);
   		} 
 
 		var debug_port;
 		var port_index = result.toString().search("port:");
 		if (port_index!= -1){
     		debug_port = result.toString().substring(port_index+6);
-			console.log("debug_port:"+debug_port);
+			console.log("*************debug_port:"+debug_port);
   		} 
 
 		return debug_port;
