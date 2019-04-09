@@ -7,24 +7,55 @@ var assert = require("assert");
 var webdrivers = require('./testlibs/fixtures/webdrivers.js');
 var tizen = require('./testlibs/tizen/tizen.js');
 var tv_key =  require('./tv_keys.js');
-var accounts = require('./accounts.json');
-
 
 var tizen_test = new tizen();
 var webdriver_test=new webdrivers();
 var tvkey = new tv_key();
 
-var app_id = "111399000128";
-var tizen_app_id = "CZuqWL5gWu.pooq";
+var app_id = "3201701011486";
+var tizen_app_id = "zcwsruDJBm.CAPHTESTSUITEANGULAR";
 
 (async function() {
     var driver = webdriver_test.appdriver_context(app_id, tizen_app_id);
-    webdriver_test.sleep(10);
+    webdriver_test.sleep(5);
  
     //login
-    await driver.findElement(webdriver.By.css('.popupBtnArea.twoBtn > div:nth-child(2)')).click();
-    webdriver_test.sleep(10);
-    await driver.findElement(webdriver.By.css('.setting')).click();
+    /*for(let i=1; i<=10; i++) {
+        await driver.findElement(webdriver.By.css(`#testsuite-menu > ul > li:nth-child(${i})`)).click();
+        webdriver_test.sleep(2);
+    }*/
+    
+    await driver.findElement(webdriver.By.css('#testsuite-menu > ul > li:nth-child(1)')).click();
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.DOWN);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.LEFT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.DOWN);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.LEFT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.OK);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.RIGHT);
+    webdriver_test.sleep(1);
+    tizen_test.input_key(tvkey.OK);
+    /*for(let i=1; i<=9; i++) {
+        await driver.findElement(webdriver.By.css(`#depth0 > div:nth-child(${i})`));
+        webdriver_test.sleep(2);
+    }*/
+    
+    /*await driver.findElement(webdriver.By.css('.setting')).click();
     webdriver_test.sleep(5);
     await driver.findElement(webdriver.By.css('#subMenu25 > .ndiv')).click();
     webdriver_test.sleep(5);
@@ -70,10 +101,7 @@ var tizen_app_id = "CZuqWL5gWu.pooq";
     await driver.findElement(webdriver.By.css('.alertPopUp03 > .popupBtnArea > .pbtn01.foc')).click();
     webdriver_test.sleep(5);
  
-    //exit
-    await driver.findElement(webdriver.By.css('.top > .logoutIc')).click();
-    webdriver_test.sleep(5);
-    await driver.findElement(webdriver.By.css('.pbtn01.sms.foc')).click();
-    webdriver_test.sleep(5);
+    */
+
    
 })().then(_ => console.log('SUCCESS'), err => console.error('ERROR: ' + err));

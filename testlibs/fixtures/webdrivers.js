@@ -39,7 +39,7 @@ function WebDrivers() {
 				tizen_TV.terminate_app(tizen_app_id);
 		}
 		var launch_info = tizen_TV.launch_app(tizen_app_id);
-		console.log("launch_info: " + launch_info);
+
 		assert(launch_info && launch_info.toString().length != 0);
 		this.port = launch_info;
 		
@@ -52,7 +52,7 @@ function WebDrivers() {
 
 		chrome_options.addArguments("--proxy-server=" + config_TV.tizen_proxy);
 
-		//var serviceBuilder = new chrome.ServiceBuilder(path.resolve('external/chromedriver'));
+
 		var service = new chrome.ServiceBuilder(path.resolve('external/chromedriver')).build();
 
 		var driver = chrome.Driver.createSession(chrome_options, service);
