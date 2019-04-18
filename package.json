@@ -10,10 +10,10 @@
   "author": "sutaking",
   "license": "ISC",
   "config": {
-    "tv": "109.123.121.94",
+    "tv": "192.168.121.94",
     "user": "root",
     "pwd": "tizen",
-    "host": "109.123.120.200",
+    "host": "192.168.120.200",
     "appUUid": "3201701011486",
     "appTizenId": "zcwsruDJBm.CAPHTESTSUITEANGULAR",
     "path": "TEST_APP/3201701011486_1.0.2.wgt"
