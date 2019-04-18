@@ -9,14 +9,14 @@
   },
   "author": "sutaking",
   "license": "ISC",
-  "config":{
-    "tv":"109.123.121.93",
+  "config": {
+    "tv": "109.123.121.94",
     "user": "root",
-    "pwd": "123456", 
+    "pwd": "tizen",
     "host": "109.123.120.200",
     "appUUid": "3201701011486",
     "appTizenId": "zcwsruDJBm.CAPHTESTSUITEANGULAR",
-    "path":"TEST_APP/3201701011486_1.0.2.wgt"
+    "path": "TEST_APP/3201701011486_1.0.2.wgt"
   },
   "dependencies": {
     "sdb.js": "git+https://git@github.com/sutaking/sdb.js.git#master",
