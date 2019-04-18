@@ -7,6 +7,7 @@ var assert = require("assert");
 var webdrivers = require('./testlibs/fixtures/webdrivers.js');
 var tizen = require('./testlibs/tizen/tizen.js');
 var tv_key =  require('./tv_keys.js');
+const {Sdb} = require('sdb.js');
 
 var tizen_test = new tizen();
 var webdriver_test=new webdrivers();
@@ -18,12 +19,6 @@ var tizen_app_id = "zcwsruDJBm.CAPHTESTSUITEANGULAR";
 (async function() {
     var driver = webdriver_test.appdriver_context(app_id, tizen_app_id);
     webdriver_test.sleep(5);
- 
-    //login
-    /*for(let i=1; i<=10; i++) {
-        await driver.findElement(webdriver.By.css(`#testsuite-menu > ul > li:nth-child(${i})`)).click();
-        webdriver_test.sleep(2);
-    }*/
     
     await driver.findElement(webdriver.By.css('#testsuite-menu > ul > li:nth-child(1)')).click();
     webdriver_test.sleep(1);

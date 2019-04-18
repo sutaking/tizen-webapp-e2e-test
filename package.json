@@ -5,11 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index.js"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "sutaking",
   "license": "ISC",
+  "config":{
+    "tv":"109.123.121.93",
+    "user": "root",
+    "pwd": "123456", 
+    "host": "109.123.120.200",
+    "appUUid": "3201701011486",
+    "appTizenId": "zcwsruDJBm.CAPHTESTSUITEANGULAR",
+    "path":"TEST_APP/3201701011486_1.0.2.wgt"
+  },
   "dependencies": {
+    "sdb.js": "git+https://git@github.com/sutaking/sdb.js.git#master",
     "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }
