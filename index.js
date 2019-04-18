@@ -5,16 +5,23 @@ var chrome = require('selenium-webdriver/chrome');
 var webdriver = require('selenium-webdriver');
 var assert = require("assert");
 
-var webdrivers = require('./testlibs/fixtures/webdrivers.js');
 
 const Sdb = require('sdb.js');
 const config = require('./package.json').config;
-
 let tv = new Sdb(config);
-var webdriver_test = new webdrivers();
+
+const sleep = function(sleep_time) {
+    console.log("sleep:" + sleep_time);
+    var now = new Date();
+    var exitTime = now.getTime() + sleep_time*1000;
+    while (true) {
+        now = new Date();
+        if (now.getTime() > exitTime)
+        return;
+    }
+};
 
 (async function () {
-    //var driver = webdriver_test.appdriver_context(app_id, tizen_app_id);
     tv.connect();
     tv.installByFile(path.resolve(config.path));
 
@@ -25,32 +32,32 @@ var webdriver_test = new webdrivers();
     var service = new chrome.ServiceBuilder(path.resolve('external/chromedriver')).build();
     var driver = chrome.Driver.createSession(chrome_options, service);
 
-    webdriver_test.sleep(5);
+    sleep(2);
 
     await driver.findElement(webdriver.By.css('#testsuite-menu > ul > li:nth-child(1)')).click();
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Down");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Left");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Down");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Left");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Enter");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Right");
-    webdriver_test.sleep(1);
+    sleep(1);
     tv.triggerRemoteController("Enter");
 
 
